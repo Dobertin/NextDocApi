@@ -514,7 +514,6 @@ namespace NextDocApi.Controllers
                 }
                 var usuario = new Usuario { IdUsuario = id };
                 _context.Usuarios.Attach(usuario);
-
                 usuario.Nombres = dto.Nombres;
                 usuario.Apellidos = dto.Apellidos;
                 usuario.Email = dto.Email;
